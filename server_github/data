@@ -1,6 +1,4 @@
 {
-    "data": [
-        {
             "resid": 13213,
             "resname": "RR Food stall",
             "resimage": "https://hdadh.dada/pn.jpg",
@@ -58,5 +56,4 @@
                 }
             ]
         }
-    ]
-}
+        }
