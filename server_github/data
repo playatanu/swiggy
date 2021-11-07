@@ -1,59 +1,60 @@
-{
-            "resid": 13213,
-            "resname": "RR Food stall",
-            "resimage": "https://hdadh.dada/pn.jpg",
-            "resreatting": 5.4,
-            "foods": [
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                },
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                },
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                }
-            ]
-        },
-        {
-            "resid": 13213,
-            "resname": "RR Food stall",
-            "resimage": "https://hdadh.dada/pn.jpg",
-            "resreatting": 5.4,
-            "foods": [
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                },
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                },
-                {
-                    "fid": 1314,
-                    "fnamee": "Pizza",
-                    "fimage": "https://xyz.in/pizza.png",
-                    "fdetels": "this is pizza",
-                    "fprice": 499
-                }
-            ]
-        }
-        }
+[
+    {
+        "resid": 13213,
+        "resname": "RR Food stall",
+        "resimage": "https://hdadh.dada/pn.jpg",
+        "resreatting": 5.4,
+        "foods": [
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            },
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            },
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            }
+        ]
+    },
+    {
+        "resid": 13213,
+        "resname": "RR Food stall",
+        "resimage": "https://hdadh.dada/pn.jpg",
+        "resreatting": 5.4,
+        "foods": [
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            },
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            },
+            {
+                "fid": 1314,
+                "fnamee": "Pizza",
+                "fimage": "https://xyz.in/pizza.png",
+                "fdetels": "this is pizza",
+                "fprice": 499
+            }
+        ]
+    }
+]
