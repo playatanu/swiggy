@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:swiggy/pages/profile_page/profile_page.dart';
 import 'package:theme_provider/theme_provider.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ThemeProvider(
       child: ThemeConsumer(
         child: Builder(
-          builder: (BuildContext context) => MaterialApp(
+          builder: (BuildContext context) => GetMaterialApp(
             theme: ThemeProvider.themeOf(context).data,
             home: const ProfilePage(),
           ),
@@ -24,18 +25,3 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({ Key? key }) : super(key: key);
-
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
-}
