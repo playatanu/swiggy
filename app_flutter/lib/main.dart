@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:swiggy/pages/profile_page/profile_page.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
         child: Builder(
           builder: (BuildContext context) => MaterialApp(
             theme: ThemeProvider.themeOf(context).data,
+            home: const ProfilePage(),
           ),
         ),
       ),
