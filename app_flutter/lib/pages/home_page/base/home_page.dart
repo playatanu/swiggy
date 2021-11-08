@@ -4,9 +4,9 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/assets/colors.dart';
-import 'package:swiggy/views/homepage/controller/appbarcontroller.dart';
-import 'package:swiggy/views/homepage/widgets/filterchoies.dart';
-import 'package:swiggy/views/homepage/widgets/foodbanner.dart';
+import 'package:swiggy/pages/home_page/controller/appbarcontroller.dart';
+import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
+import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
