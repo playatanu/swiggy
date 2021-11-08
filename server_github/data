@@ -1,59 +1,97 @@
 [
     {
-        "resid": 13213,
-        "resname": "RR Food stall",
-        "resimage": "https://hdadh.dada/pn.jpg",
+        "resid": 1,
+        "resname": "Coffee Break Cafe",
+        "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/rhxfjoksmhf3oqzwuay2",
         "resreatting": 5.4,
         "foods": [
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
-                "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fid": 1,
+                "fname": "Chicken Pokora",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/jcdy6kr6bfonemzradmx",
+                "nonvag": 1,
+                "fdetels": "5 Pics",
+                "fprice": 175
             },
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
-                "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fid": 2,
+                "fname": "Chicken Lolipop",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/kc7glurk0b3frz66edtx",
+                "fdetels": "6 Pics",
+                "nonvag": 1,
+                "fprice": 175
             },
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
+                "fid": 3,
+                "fname": "Chicken Sandwich",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pigototm95pyhdqa5i6b",
+                "fdetels": "1 Pic",
+                "nonvag": 1,
+                "fprice": 85
+            },
+            {
+                "fid": 4,
+                "fname": "Veg And Chesse Momo",
                 "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fdetels": "4 Pic",
+                "nonvag": 0,
+                "fprice": 75
+            },
+            {
+                "fid": 5,
+                "fname": "French Fries",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/hvra8mcwdrom0wpfejnz",
+                "fdetels": "1 Pic",
+                "nonvag": 1,
+                "fprice": 80
             }
         ]
     },
     {
-        "resid": 13213,
-        "resname": "RR Food stall",
-        "resimage": "https://hdadh.dada/pn.jpg",
+        "resid": 2,
+        "resname": "Zero Cafe Hut",
+        "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vxknxzcpshh9m0lmhhmx",
         "resreatting": 5.4,
         "foods": [
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
-                "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fid": 1,
+                "fnamee": "White Sauce Pasta",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rwseqjjud4jogvzdjwug",
+                "fdetels": "Extra Sauce",
+                "nonvag": 0,
+                "fprice": 200
             },
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
-                "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fid": 2,
+                "fnamee": "Chicken Manchurian",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ptrwcvtmgthkofiot6mm",
+                "fdetels": " ",
+                "nonvag": 1,
+                "fprice": 200
             },
             {
-                "fid": 1314,
-                "fnamee": "Pizza",
-                "fimage": "https://xyz.in/pizza.png",
-                "fdetels": "this is pizza",
-                "fprice": 499
+                "fid": 3,
+                "fnamee": "Chicken Roll",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pp1elxav47c8fgpdzhrr",
+                "fdetels": "Roll with Extra Chicken",
+                "nonvag": 1,
+                "fprice": 100
+            },
+            {
+                "fid": 4,
+                "fnamee": "Chilli Chicken",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lkuqbq6deyfmhqm1qvww",
+                "fdetels": "",
+                "nonvag": 1,
+                "fprice": 200
+            },
+            {
+                "fid": 5,
+                "fnamee": "Chicken Noodles",
+                "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vcbgrqvmedqbafx1rqex",
+                "fdetels": "",
+                "nonvag": 1,
+                "fprice": 150
             }
         ]
     }
