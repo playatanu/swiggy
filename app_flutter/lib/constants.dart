@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 final kMyAccountTitleTextStyle = GoogleFonts.roboto(
   fontSize: 24,
   fontWeight: FontWeight.bold,
+  color: Colors.black,
 );
 
-//appbar color for my account appbar
-const kMyAccountAppBarColor = Colors.white;
+
