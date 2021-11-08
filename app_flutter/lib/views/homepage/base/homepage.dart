@@ -1,10 +1,12 @@
 // ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/assets/colors.dart';
 import 'package:swiggy/views/homepage/controller/appbarcontroller.dart';
+import 'package:swiggy/views/homepage/widgets/filterchoies.dart';
+import 'package:swiggy/views/homepage/widgets/foodbanner.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -12,6 +14,8 @@ class HomePage extends StatelessWidget {
   AppbarController appbarController = Get.put(AppbarController());
   @override
   Widget build(BuildContext context) {
+    MediaQueryData queryData;
+    queryData = MediaQuery.of(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: white,
@@ -42,22 +46,12 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            Container(
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      Text('Food is Goods'),
-                      Text('Enjoy your fev foods'),
-                      Text('View All')
-                    ],
-                  ),
-                  Image(
-                    image: NetworkImage(''),
-                  ),
-                ],
-              ),
-            )
+            FoodBanner(queryData: queryData),
+
+            ///Food banner [homepage/widgets/foodbanner.dart]
+            const FilterChoies(),
+
+            ///FilterChoies [homepage/widgets/filterchoies.dart]
           ],
         ),
       ),
