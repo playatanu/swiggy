@@ -16,6 +16,11 @@
 * [firebase_auth](https://pub.dev/packages/firebase_auth)
 * [google_sign_in](https://pub.dev/packages/google_sign_in)
 * [firebase_database](https://pub.dev/packages/firebase_database)
+* [google_fonts](https://pub.dev/packages/google_fonts)
+* [theme_provider](https://pub.dev/packages/theme_provider)
+* [get](https://pub.dev/packages/get)
+* [get_storage](https://pub.dev/packages/get_storage)
+* [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
      
 </details>
 
