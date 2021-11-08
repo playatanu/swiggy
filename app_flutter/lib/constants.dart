@@ -9,4 +9,11 @@ final kMyAccountTitleTextStyle = GoogleFonts.roboto(
   color: Colors.black,
 );
 
+//Color for edit textbutton in profile page
+const kEditTextColor = Color(0xFFFF8A00);
 
+//text style for phone number and email in profile page
+final kPhoneAndEmailTextStyle = GoogleFonts.roboto(
+  fontSize: 12,
+  color: const Color(0xFF494747),
+);
