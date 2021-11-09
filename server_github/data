@@ -55,7 +55,7 @@
         "foods": [
             {
                 "fid": 1,
-                "fnamee": "White Sauce Pasta",
+                "fname": "White Sauce Pasta",
                 "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/rwseqjjud4jogvzdjwug",
                 "fdetels": "Extra Sauce",
                 "nonvag": 0,
@@ -63,7 +63,7 @@
             },
             {
                 "fid": 2,
-                "fnamee": "Chicken Manchurian",
+                "fname": "Chicken Manchurian",
                 "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/ptrwcvtmgthkofiot6mm",
                 "fdetels": " ",
                 "nonvag": 1,
@@ -71,7 +71,7 @@
             },
             {
                 "fid": 3,
-                "fnamee": "Chicken Roll",
+                "fname": "Chicken Roll",
                 "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/pp1elxav47c8fgpdzhrr",
                 "fdetels": "Roll with Extra Chicken",
                 "nonvag": 1,
@@ -79,7 +79,7 @@
             },
             {
                 "fid": 4,
-                "fnamee": "Chilli Chicken",
+                "fname": "Chilli Chicken",
                 "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/lkuqbq6deyfmhqm1qvww",
                 "fdetels": "",
                 "nonvag": 1,
@@ -87,7 +87,7 @@
             },
             {
                 "fid": 5,
-                "fnamee": "Chicken Noodles",
+                "fname": "Chicken Noodles",
                 "fimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/vcbgrqvmedqbafx1rqex",
                 "fdetels": "",
                 "nonvag": 1,
