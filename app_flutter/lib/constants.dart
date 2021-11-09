@@ -18,6 +18,11 @@ final kPhoneAndEmailTextStyle = GoogleFonts.roboto(
   color: const Color(0xFF494747),
 );
 
+//Color for past oder title background in profile page
+const kPastOrderBackgroundColor = Color(0xFFF5F5F5);
+
+//Color for past order title in profile page
+const kPastOrderTitleColor = Color(0xFF525252);
 
 //Black color
 const Color black = Colors.black;
