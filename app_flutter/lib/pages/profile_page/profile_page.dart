@@ -1,7 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:swiggy/constants.dart';
 import 'package:swiggy/pages/profile_page/widgets/my_account_help_widget.dart';
+import 'package:swiggy/pages/profile_page/widgets/order_section.dart';
 import 'package:swiggy/utilities/size_config.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -20,7 +23,6 @@ class _ProfilePageState extends State<ProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-
     SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
@@ -133,6 +135,34 @@ class _ProfilePageState extends State<ProfilePage> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: getProportionateScreenWidth(20),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                OrderSection(
+                  resturantName: 'Hotel City Pride Ruchi Resturant',
+                  address: 'Ramsitapara',
+                  price: '40',
+                ),
+                OrderSection(
+                  resturantName: 'Hotel City Pride Ruchi Resturant',
+                  address: 'Ramsitapara',
+                  price: '40',
+                ),
+                Divider(
+                  thickness: 2,
+                  color: black,
+                ),
+                SizedBox(
+                  height: getProportionateScreenHeight(14),
+                ),
+                Text('VIEW MORE ORDERS', style: kViewMoreTextStyle,),
+              ],
             ),
           ),
         ],
