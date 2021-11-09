@@ -47,6 +47,16 @@ final kViewMoreTextStyle = GoogleFonts.roboto(
   color: kViewMoreColor,
 );
 
+//TextStyle for logout text in profile page
+final kLogoutTextStyle = GoogleFonts.roboto(
+  fontWeight: FontWeight.bold,
+  fontSize: getFont(20),
+  color: black,
+);
+
+//TextStyle for appversion
+final kAppVersionTextStyle = GoogleFonts.roboto(fontSize: getFont(14));
+
 //Color for view more orders in profile page
 const kViewMoreColor = Color(0xFFFF8A00);
 
