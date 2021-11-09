@@ -4,6 +4,8 @@
         "resname": "Coffee Break Cafe",
         "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/rhxfjoksmhf3oqzwuay2",
         "resreatting": 5.4,
+        "address": "radha bazar, Ramsitapara",
+        "type": "Italian, Fast Food",
         "foods": [
             {
                 "fid": 1,
@@ -52,6 +54,8 @@
         "resname": "Zero Cafe Hut",
         "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vxknxzcpshh9m0lmhhmx",
         "resreatting": 5.4,
+        "address": "radha bazar, Ramsitapara",
+        "type": "Italian, Fast Food",
         "foods": [
             {
                 "fid": 1,
