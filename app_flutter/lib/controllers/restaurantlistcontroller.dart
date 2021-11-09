@@ -17,5 +17,6 @@ class ResListController extends GetxController {
   fatchres() async {
     var reslists = await restaurantList.getrestaurantlist();
     reslist.assignAll(reslists);
+    print(reslist.length);
   }
 }

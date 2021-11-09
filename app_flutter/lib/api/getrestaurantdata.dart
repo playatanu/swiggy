@@ -1,5 +1,4 @@
 ///[Restudent Data List]
-import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:swiggy/models/restudentmodel.dart';
 
@@ -11,7 +10,7 @@ class RestaurantData {
     final response = await http.get(restudenturl);
 
     if (response.statusCode == 200) {
-      return jsonDecode(response.body);
+      return restaurantModelFromJson(response.body);
     } else {
       throw Exception('Failed to load album');
     }
