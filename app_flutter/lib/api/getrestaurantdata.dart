@@ -1,0 +1,19 @@
+///[Restudent Data List]
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:swiggy/models/restudentmodel.dart';
+
+Uri restudenturl = Uri.parse(
+    'https://raw.githubusercontent.com/playatanu/swiggy/main/server_github/data');
+
+class RestaurantData {
+  Future<List<RestudentModel>> getrestaurantlist() async {
+    final response = await http.get(restudenturl);
+
+    if (response.statusCode == 200) {
+      return jsonDecode(response.body);
+    } else {
+      throw Exception('Failed to load album');
+    }
+  }
+}
