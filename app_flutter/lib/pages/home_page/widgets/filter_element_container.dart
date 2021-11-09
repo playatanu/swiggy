@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy/assets/colors.dart';
+import 'package:swiggy/constants.dart';
 
 class FilterElementContainer extends StatelessWidget {
   const FilterElementContainer({
