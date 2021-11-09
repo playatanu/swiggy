@@ -40,6 +40,16 @@ final kFoodPriceTextStyle = GoogleFonts.roboto(
   color: const Color(0xFF7A7A7A),
 );
 
+//TextStyle for view more orders title in profile page
+final kViewMoreTextStyle = GoogleFonts.roboto(
+  fontSize: getFont(14),
+  fontWeight: FontWeight.bold,
+  color: kViewMoreColor,
+);
+
+//Color for view more orders in profile page
+const kViewMoreColor = Color(0xFFFF8A00);
+
 //Color for past oder title background in profile page
 const kPastOrderBackgroundColor = Color(0xFFF5F5F5);
 
