@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'pages/homepage/base/homepage.dart';
+import 'pages/homepage/view/homepage.dart';
 
 void main() {
   runApp(const MyApp());
