@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:swiggy/constants.dart';
+import 'package:swiggy/pages/profile_page/widgets/my_account_help_widget.dart';
+import 'package:swiggy/utilities/size_config.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -10,8 +12,16 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
+  //variable to control first drop down menu
+  bool firstDropDownSelected = false;
+
+  //variable to control second drop down menu
+  bool secondDropDownSelected = false;
+
   @override
   Widget build(BuildContext context) {
+
+    SizeConfig().init(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -21,57 +31,111 @@ class _ProfilePageState extends State<ProfilePage> {
         centerTitle: false,
         backgroundColor: Colors.white,
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(
-          top: 30,
-          left: 20,
-          right: 20,
-        ),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Saptarsi Roy'.toUpperCase(),
-                  style: kMyAccountTitleTextStyle.copyWith(
-                    fontSize: 18,
-                  ),
-                ),
-                Text(
-                  'EDIT',
-                  style: GoogleFonts.roboto(
-                    fontSize: 12,
-                    color: kEditTextColor,
-                  ),
-                ),
-              ],
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(
+              top: 30,
+              left: 20,
+              right: 20,
             ),
-            
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
+            child: Column(
               children: [
-                Text(
-                  '1234567890',
-                  style: kPhoneAndEmailTextStyle,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Saptarsi Roy'.toUpperCase(),
+                      style: kMyAccountTitleTextStyle.copyWith(
+                        fontSize: 18,
+                      ),
+                    ),
+                    Text(
+                      'EDIT',
+                      style: GoogleFonts.roboto(
+                        fontSize: 12,
+                        color: kEditTextColor,
+                      ),
+                    ),
+                  ],
                 ),
-                
                 const SizedBox(
-                  width: 10,
+                  height: 10,
                 ),
-                Text(
-                  'abcd@email.com',
-                  style: kPhoneAndEmailTextStyle,
+                Row(
+                  children: [
+                    Text(
+                      '1234567890',
+                      style: kPhoneAndEmailTextStyle,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'abcd@email.com',
+                      style: kPhoneAndEmailTextStyle,
+                    ),
+                  ],
+                ),
+                const Divider(
+                  thickness: 2,
+                  color: Colors.black,
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                MyAccountHelpWidget(
+                  title1: 'MY ACCOUNT',
+                  title2: 'Address, Offers & Settings',
+                  icon: firstDropDownSelected
+                      ? const Icon(Icons.arrow_drop_up_rounded)
+                      : const Icon(Icons.arrow_drop_down_rounded),
+                  onPressed: () {
+                    setState(() {
+                      //changing the value to opposite of its value to trigger change for first drop down menu
+                      firstDropDownSelected = !firstDropDownSelected;
+                    });
+                  },
+                ),
+                const Divider(
+                  thickness: 1,
+                ),
+                MyAccountHelpWidget(
+                    title1: 'Help',
+                    title2: 'FAQs & Links',
+                    icon: secondDropDownSelected
+                        ? const Icon(Icons.arrow_drop_up_rounded)
+                        : const Icon(Icons.arrow_drop_down_rounded),
+                    onPressed: () {
+                      setState(() {
+                        //changing the value to opposite of its value to trigger change for second drop down menu
+                        secondDropDownSelected = !secondDropDownSelected;
+                      });
+                    }),
+                const SizedBox(
+                  height: 20,
                 ),
               ],
             ),
-            const Divider(
-              thickness: 1,
+          ),
+          Container(
+            padding: const EdgeInsets.only(left: 20),
+            color: kPastOrderBackgroundColor,
+            width: MediaQuery.of(context).size.width,
+            height: 47,
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Past Order',
+                style: kPhoneAndEmailTextStyle.copyWith(
+                  fontSize: getFont(14),
+                  color: kPastOrderTitleColor,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
