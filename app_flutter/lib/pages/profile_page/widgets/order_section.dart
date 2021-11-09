@@ -36,7 +36,7 @@ class OrderSection extends StatelessWidget {
                     'Delivered',
                     style: kDeliveredTextStyle,
                   ),
-                  Icon(
+                  const Icon(
                     Icons.verified_rounded,
                     color: Colors.green,
                   ),
@@ -47,7 +47,7 @@ class OrderSection extends StatelessWidget {
           Text(
             address,
             style: kDeliveredTextStyle.copyWith(
-              color: Color(0xFF9E9E9E),
+              color: const Color(0xFF9E9E9E),
             ),
           ),
           Text(
