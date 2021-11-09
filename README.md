@@ -21,6 +21,7 @@
 * [get](https://pub.dev/packages/get)
 * [get_storage](https://pub.dev/packages/get_storage)
 * [flutter_secure_storage](https://pub.dev/packages/flutter_secure_storage)
+* [fluttertoast](https://pub.dev/packages/fluttertoast)
      
 </details>
 
