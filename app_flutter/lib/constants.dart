@@ -17,3 +17,13 @@ final kPhoneAndEmailTextStyle = GoogleFonts.roboto(
   fontSize: 12,
   color: const Color(0xFF494747),
 );
+
+
+//Black color
+const Color black = Colors.black;
+
+//White color
+const Color white = Colors.white;
+
+//Gray color
+const Color gray = Color(0xffF6F6F6);

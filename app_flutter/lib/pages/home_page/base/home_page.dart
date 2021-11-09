@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
-import 'package:swiggy/assets/colors.dart';
+import 'package:swiggy/constants.dart';
+
 import 'package:swiggy/pages/home_page/controller/appbarcontroller.dart';
 import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
 import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
       ),
       appBar: AppBar(
         backgroundColor: white,
-        leading: Icon(
+        leading: const Icon(
           Icons.location_on_outlined,
           color: black,
         ),
@@ -55,7 +56,7 @@ class HomePage extends StatelessWidget {
               title: Text(appbarController.area.value),
               subtitle: Text(appbarController.address.value),
             )),
-        actions: [
+        actions: const [
           Icon(
             Icons.star_outline_sharp,
             color: black,
@@ -66,7 +67,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(color: black),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             width: 12,
           ),
         ],
