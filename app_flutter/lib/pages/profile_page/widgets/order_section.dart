@@ -17,8 +17,7 @@ class OrderSection extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(
         top: getProportionateScreenHeight(10),
-        left: getProportionateScreenWidth(20),
-        right: getProportionateScreenWidth(20),
+        
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
