@@ -6,8 +6,8 @@ import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
 
 import 'package:swiggy/pages/home_page/controller/appbarcontroller.dart';
-import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
-import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
+import 'package:swiggy/pages/home_page/widgets/filter_choies.dart';
+import 'package:swiggy/pages/home_page/widgets/food_banner.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
