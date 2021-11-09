@@ -6,6 +6,7 @@ import 'package:swiggy/constants.dart';
 import 'package:swiggy/pages/profile_page/widgets/my_account_help_widget.dart';
 import 'package:swiggy/pages/profile_page/widgets/order_section.dart';
 import 'package:swiggy/utilities/size_config.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -161,10 +162,54 @@ class _ProfilePageState extends State<ProfilePage> {
                 SizedBox(
                   height: getProportionateScreenHeight(14),
                 ),
-                Text('VIEW MORE ORDERS', style: kViewMoreTextStyle,),
+                Text(
+                  'VIEW MORE ORDERS',
+                  style: kViewMoreTextStyle,
+                ),
               ],
             ),
           ),
+          Container(
+            margin: EdgeInsets.only(top: 20),
+            color: kPastOrderBackgroundColor,
+            width: MediaQuery.of(context).size.width,
+            height: getProportionateScreenHeight(30),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20,
+              right: 20,
+            ),
+            child: TextButton(
+              onPressed: () {
+                Fluttertoast.showToast(msg: 'Logged out');
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'LOGOUT ',
+                    style: kLogoutTextStyle,
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    color: black,
+                  )
+                ],
+              ),
+            ),
+          ),
+          Container(
+            color: kPastOrderBackgroundColor,
+            width: MediaQuery.of(context).size.width,
+            height: getProportionateScreenHeight(50),
+            child: Align(
+              alignment: Alignment.center,
+                child: Text(
+              'App Version 1.0.0',
+              style: kAppVersionTextStyle,
+            ),),
+          )
         ],
       ),
     );
