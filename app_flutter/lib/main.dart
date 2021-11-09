@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'pages/homepage/view/homepage.dart';
+import 'package:swiggy/pages/home_page/homepage.dart';
+import 'package:theme_provider/theme_provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,16 +9,19 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ThemeProvider(
+      child: ThemeConsumer(
+        child: Builder(
+          builder: (BuildContext context) => GetMaterialApp(
+            theme: ThemeProvider.themeOf(context).data,
+            debugShowCheckedModeBanner: false,
+            home: HomePage(),
+          ),
+        ),
       ),
-      home: HomePage(),
     );
   }
 }

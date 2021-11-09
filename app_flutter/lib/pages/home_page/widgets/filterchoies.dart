@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:swiggy/pages/homepage/widgets/filterelementcontainer.dart';
+
+import 'package:swiggy/pages/home_page/widgets/filterelementcontainer.dart';
 
 class FilterChoies extends StatelessWidget {
   const FilterChoies({

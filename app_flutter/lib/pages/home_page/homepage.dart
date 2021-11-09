@@ -1,16 +1,15 @@
 // ignore_for_file: must_be_immutable
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
-import 'package:swiggy/assets/colors.dart';
+import 'package:swiggy/constants.dart';
 import 'package:swiggy/controllers/restaurantlistcontroller.dart';
 import 'package:swiggy/controllers/appbarcontroller.dart';
-import 'package:swiggy/pages/homepage/widgets/filterchoies.dart';
-import 'package:swiggy/pages/homepage/widgets/foodbanner.dart';
-import 'package:swiggy/pages/homepage/widgets/restaurantlist.dart';
-import 'package:swiggy/pages/homepage/widgets/todaysfeature.dart';
+import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
+import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
+import 'package:swiggy/pages/home_page/widgets/restaurantlist.dart';
+import 'package:swiggy/pages/home_page/widgets/todaysfeature.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -27,16 +26,16 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            ///Foodbanner [homepage/widgets/foodbanner.dart]
+            ///Foodbanner [home_page/widgets/foodbanner.dart]
             FoodBanner(queryData: queryData),
 
-            ///FilterChoies [homepage/widgets/filterchoies.dart]
-            const FilterChoies(),
-
-            ///TodaysFeatured [homepage/widgets/todaysfeatured.dart]
+            ///TodaysFeatured [home_page/widgets/todaysfeatured.dart]
             const TodaysFeatured(),
 
-            ///RestaurantList [homepage/widgets/restaurantlist.dart]
+            ///FilterChoies [home_page/widgets/filterchoies.dart]
+            const FilterChoies(),
+
+            ///RestaurantList [home_page/widgets/restaurantlist.dart]
             RestaurantListView(
                 resListController: resListController, queryData: queryData),
           ],
@@ -44,7 +43,7 @@ class HomePage extends StatelessWidget {
       ),
       appBar: AppBar(
         backgroundColor: white,
-        leading: Icon(
+        leading: const Icon(
           Icons.location_on_outlined,
           color: black,
         ),
@@ -52,7 +51,7 @@ class HomePage extends StatelessWidget {
               title: Text(appbarController.area.value),
               subtitle: Text(appbarController.address.value),
             )),
-        actions: [
+        actions: const [
           Icon(
             Icons.star_outline_sharp,
             color: black,
@@ -63,7 +62,7 @@ class HomePage extends StatelessWidget {
               style: TextStyle(color: black),
             ),
           ),
-          const SizedBox(
+          SizedBox(
             width: 12,
           ),
         ],

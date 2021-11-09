@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
-import 'package:swiggy/assets/colors.dart';
+import 'package:swiggy/constants.dart';
 import 'package:swiggy/controllers/restaurantlistcontroller.dart';
 
 class RestaurantListView extends StatelessWidget {
@@ -43,10 +43,10 @@ class RestaurantListView extends StatelessWidget {
                             Container(
                                 height: 25,
                                 width: 80,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     color: gray,
-                                    borderRadius: const BorderRadius.all(
-                                        Radius.circular(3))),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(3))),
                                 child: const Center(child: Text('50% OFF'))),
                           ],
                         ),
