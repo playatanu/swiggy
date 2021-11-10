@@ -1,10 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:swiggy/constants.dart';
 
 class TodaysFeatured extends StatelessWidget {
-  const TodaysFeatured({
-    Key? key,
-  }) : super(key: key);
+  const TodaysFeatured({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +31,9 @@ class TodaysFeatured extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       margin: const EdgeInsets.symmetric(horizontal: 5.0),
                       decoration: const BoxDecoration(
-                          image: DecorationImage(image: NetworkImage('')),
-                          color: Colors.amber,
+                          image: DecorationImage(
+                              image: NetworkImage('', scale: 1.0)),
+                          color: gray,
                           borderRadius: BorderRadius.all(Radius.circular(10))),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),

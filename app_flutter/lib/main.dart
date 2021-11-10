@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:swiggy/pages/home_page/homepage.dart';
+import 'package:swiggy/pages/home_page/home_page.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 void main() {

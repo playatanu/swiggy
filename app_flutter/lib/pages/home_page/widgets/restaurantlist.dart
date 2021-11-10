@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
 import 'package:swiggy/controllers/restaurantlistcontroller.dart';
 
+// ignore: must_be_immutable
 class RestaurantListView extends StatelessWidget {
-  const RestaurantListView({
-    Key? key,
-    required this.resListController,
-    required this.queryData,
-  }) : super(key: key);
+  RestaurantListView({Key? key}) : super(key: key);
 
-  final ResListController resListController;
-  final MediaQueryData queryData;
-
+  ResListController resListController = Get.put(ResListController());
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -27,14 +24,15 @@ class RestaurantListView extends StatelessWidget {
                     Expanded(
                       flex: 1,
                       child: Container(
-                        height: queryData.size.height / 7.5,
-                        width: queryData.size.height / 7.5,
+                        height: MediaQuery.of(context).size.height / 7.5,
+                        width: MediaQuery.of(context).size.height / 7.5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
                             fit: BoxFit.fill,
                             image: NetworkImage(
-                                resListController.reslist[index].resimage),
+                                resListController.reslist[index].resimage,
+                                scale: 1.0),
                           ),
                         ),
                         child: Column(
