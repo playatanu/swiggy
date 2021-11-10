@@ -19,7 +19,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    resListController.fatchres();
     MediaQueryData queryData;
     queryData = MediaQuery.of(context);
     return Scaffold(

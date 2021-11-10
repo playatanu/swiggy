@@ -5,16 +5,18 @@ import 'package:swiggy/api/getrestaurantdata.dart';
 
 RestaurantData restaurantList = RestaurantData();
 
+///[Restudent List controller]
 class ResListController extends GetxController {
   var reslist = <RestudentModel>[].obs;
 
   @override
   onInit() {
-    fatchres();
+    fatchdata();
     super.onInit();
   }
 
-  fatchres() async {
+  //Get RestudentList from RestaurantData
+  fatchdata() async {
     var reslists = await restaurantList.getrestaurantlist();
     reslist.assignAll(reslists);
   }
