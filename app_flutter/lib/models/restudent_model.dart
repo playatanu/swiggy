@@ -2,9 +2,17 @@ import 'dart:convert';
 
 List<RestudentModel> restaurantModelFromJson(String str) =>
     List<RestudentModel>.from(
-        json.decode(str).map((x) => RestudentModel.fromJson(x)));
-String restaurantModelToJson(List<RestudentModel> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+      json.decode(str).map(
+            (x) => RestudentModel.fromJson(x),
+          ),
+    );
+String restaurantModelToJson(List<RestudentModel> data) => json.encode(
+      List<dynamic>.from(
+        data.map(
+          (x) => x.toJson(),
+        ),
+      ),
+    );
 
 class RestudentModel {
   RestudentModel({
