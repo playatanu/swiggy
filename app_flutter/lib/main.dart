@@ -19,6 +19,9 @@ class MyApp extends StatelessWidget {
             theme: ThemeProvider.themeOf(context).data,
             debugShowCheckedModeBanner: false,
             home: HomePage(),
+
+            /// To Debug your app run this line in terminal
+            /// [$ flutter run --no-sound-null-safety]
           ),
         ),
       ),
