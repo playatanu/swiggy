@@ -51,7 +51,7 @@ class Food {
     required this.fid,
     required this.fname,
     required this.fimage,
-    required this.nonvag,
+    required this.nonVeg,
     required this.fdetels,
     required this.fprice,
   });
@@ -59,7 +59,7 @@ class Food {
   int fid;
   String fname;
   String fimage;
-  int nonvag;
+  int nonVeg;
   String fdetels;
   int fprice;
 
@@ -67,7 +67,7 @@ class Food {
         fid: json["fid"],
         fname: json["fname"],
         fimage: json["fimage"],
-        nonvag: json["nonvag"],
+        nonVeg: json["nonVeg"],
         fdetels: json["fdetels"],
         fprice: json["fprice"],
       );
@@ -76,7 +76,7 @@ class Food {
         "fid": fid,
         "fname": fname,
         "fimage": fimage,
-        "nonvag": nonvag,
+        "nonVeg": nonVeg,
         "fdetels": fdetels,
         "fprice": fprice,
       };
