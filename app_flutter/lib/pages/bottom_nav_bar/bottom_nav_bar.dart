@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:swiggy/constants.dart';
-import 'package:swiggy/pages/home_page/base/home_page.dart';
+import 'package:swiggy/pages/home_page/home_page.dart';
 import 'package:swiggy/pages/profile_page/profile_page.dart';
 
 class MyBottomNavBar extends StatefulWidget {
