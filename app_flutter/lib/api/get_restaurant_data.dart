@@ -1,6 +1,6 @@
 ///[Restudent Data List]
 import 'package:http/http.dart' as http;
-import 'package:swiggy/models/restudentmodel.dart';
+import 'package:swiggy/models/restudent_model.dart';
 
 Uri restudenturl = Uri.parse(
     'https://raw.githubusercontent.com/playatanu/swiggy/main/server_github/data');

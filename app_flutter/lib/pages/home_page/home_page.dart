@@ -4,7 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
-import 'package:swiggy/controllers/locationcontroller.dart';
+import 'package:swiggy/controllers/location_controller.dart';
 import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
 import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
 import 'package:swiggy/pages/home_page/widgets/restaurantlist.dart';

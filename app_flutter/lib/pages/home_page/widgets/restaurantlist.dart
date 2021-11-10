@@ -3,7 +3,7 @@ import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
-import 'package:swiggy/controllers/restaurantlistcontroller.dart';
+import 'package:swiggy/controllers/restaurant_list_controller.dart';
 
 // ignore: must_be_immutable
 class RestaurantListView extends StatelessWidget {
