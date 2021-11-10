@@ -3,7 +3,7 @@ import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:swiggy/models/restudent_model.dart';
 import 'package:swiggy/api/get_restaurant_data.dart';
 
-RestaurantData restaurantList = RestaurantData();
+
 
 ///[Restudent List controller]
 class ResListController extends GetxController {
@@ -11,13 +11,13 @@ class ResListController extends GetxController {
 
   @override
   onInit() {
-    fatchdata();
+    fetchData();
     super.onInit();
   }
 
   //Get RestudentList from RestaurantData
-  fatchdata() async {
-    var reslists = await restaurantList.getrestaurantlist();
+  fetchData() async {
+    var reslists = await getrestaurantlist();
     reslist.assignAll(reslists);
   }
 }
