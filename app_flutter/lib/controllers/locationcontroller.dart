@@ -12,8 +12,8 @@ class LocationController extends GetxController {
   ///This Show the User curent Location
   late Position position;
 
-  var area = ''.obs;
-  var address = ''.obs;
+  var area = 'Swiggy'.obs;
+  var address = 'Swiggya'.obs;
 
   @override
   onInit() {

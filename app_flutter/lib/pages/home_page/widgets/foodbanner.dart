@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:swiggy/constants.dart';
 
 class FoodBanner extends StatelessWidget {
   const FoodBanner({Key? key}) : super(key: key);
@@ -12,7 +13,15 @@ class FoodBanner extends StatelessWidget {
       child: Container(
         height: height / 7,
         decoration: BoxDecoration(
-            border: Border.all(), borderRadius: BorderRadius.circular(12)),
+            color: white,
+            boxShadow: const [
+              BoxShadow(
+                color: black,
+                blurRadius: 2.0,
+              ),
+            ],
+            //  border: Border.all(width: 0.1),
+            borderRadius: BorderRadius.circular(12)),
         child: Padding(
           padding: const EdgeInsets.only(left: 20),
           child: Row(
@@ -36,8 +45,7 @@ class FoodBanner extends StatelessWidget {
                   image: const DecorationImage(
                     fit: BoxFit.contain,
                     image: NetworkImage(
-                        'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/rhxfjoksmhf3oqzwuay2',
-                        scale: 1.0),
+                        'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_140,h_140,c_fill/rhxfjoksmhf3oqzwuay2'),
                   ),
                 ),
               ),
