@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:swiggy/constants.dart';
+import 'package:swiggy/pages/bottom_nav_bar/bottom_nav_bar.dart';
 import 'package:swiggy/pages/profile_page/widgets/my_account_help_widget.dart';
 import 'package:swiggy/pages/profile_page/widgets/order_section.dart';
 import 'package:swiggy/utilities/size_config.dart';
@@ -26,6 +27,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     return Scaffold(
+      bottomNavigationBar: const MyBottomNavBar(),
       appBar: AppBar(
         title: Text(
           'MY ACCOUNT',

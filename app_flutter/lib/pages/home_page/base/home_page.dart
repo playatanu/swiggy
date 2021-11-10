@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
+import 'package:swiggy/pages/bottom_nav_bar/bottom_nav_bar.dart';
 
 import 'package:swiggy/pages/home_page/controller/appbarcontroller.dart';
 import 'package:swiggy/pages/home_page/widgets/filter_choies.dart';
@@ -18,6 +19,7 @@ class HomePage extends StatelessWidget {
     MediaQueryData queryData;
     queryData = MediaQuery.of(context);
     return Scaffold(
+      bottomNavigationBar: const MyBottomNavBar(),
       body: SafeArea(
         child: ListView(
           children: [
