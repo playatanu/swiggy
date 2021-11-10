@@ -1,21 +1,27 @@
 import 'package:flutter/widgets.dart';
+import 'package:swiggy/constants.dart';
 
 class FoodBanner extends StatelessWidget {
-  const FoodBanner({
-    Key? key,
-    required this.queryData,
-  }) : super(key: key);
-
-  final MediaQueryData queryData;
+  const FoodBanner({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
+    final double height = MediaQuery.of(context).size.height;
     return Padding(
       padding: const EdgeInsets.all(25.0),
       child: Container(
-        height: queryData.size.height / 7,
+        height: height / 7,
         decoration: BoxDecoration(
-            border: Border.all(), borderRadius: BorderRadius.circular(12)),
+            color: white,
+            boxShadow: const [
+              BoxShadow(
+                color: black,
+                blurRadius: 2.0,
+              ),
+            ],
+            //  border: Border.all(width: 0.1),
+            borderRadius: BorderRadius.circular(12)),
         child: Padding(
           padding: const EdgeInsets.only(left: 20),
           child: Row(
@@ -32,8 +38,8 @@ class FoodBanner extends StatelessWidget {
                 ],
               ),
               Container(
-                height: queryData.size.height / 7.5,
-                width: queryData.size.height / 7.5,
+                height: MediaQuery.of(context).size.width / 7.5,
+                width: width / 7.5,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   image: const DecorationImage(

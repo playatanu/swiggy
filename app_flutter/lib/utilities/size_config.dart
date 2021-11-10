@@ -12,7 +12,9 @@ class SizeConfig {
     screenWidth = _mediaQueryData.size.width;
     screenHeight = _mediaQueryData.size.height;
     orientation = _mediaQueryData.orientation;
-    defaultSize = orientation == Orientation.landscape ? screenHeight * 0.024 : screenWidth * 0.024;
+    defaultSize = orientation == Orientation.landscape
+        ? screenHeight * 0.024
+        : screenWidth * 0.024;
   }
 }
 
@@ -29,7 +31,6 @@ double getProportionateScreenWidth(double inputWidth) {
   // 375 is the layout width that designer use
   return (inputWidth / 375.0) * screenWidth;
 }
-
 
 //Get the proportional font size as the screen size and orientation also
 double getFont(double size) {
