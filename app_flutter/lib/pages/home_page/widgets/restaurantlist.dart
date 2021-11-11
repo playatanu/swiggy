@@ -30,7 +30,8 @@ class RestaurantListView extends StatelessWidget {
                   ///[On Tap Restaurant Item navigate to resturant page with curent index]
                 },
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 20, top: 20, right: 20),
+                  padding: const EdgeInsets.only(
+                      left: 20, top: 20, right: 20, bottom: 20),
                   child: (Row(
                     children: [
                       Stack(
@@ -86,9 +87,79 @@ class RestaurantListView extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(resListController.reslist[index].resname),
-                              Text(resListController.reslist[index].address),
-                              Text(resListController.reslist[index].type),
+                              Text(
+                                resListController.reslist[index].resname,
+                                style: const TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w600),
+                              ),
+                              Text(
+                                resListController.reslist[index].type,
+                                style: const TextStyle(
+                                  color: Colors.black38,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              Text(
+                                resListController.reslist[index].address,
+                                style: const TextStyle(
+                                  color: Colors.black38,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  const Divider(),
+                                  Row(
+                                    children: [
+                                      const Icon(
+                                        Icons.star_border,
+                                        size: 15,
+                                        color: Colors.black38,
+                                      ),
+                                      const SizedBox(width: 2),
+                                      Text(
+                                        resListController
+                                            .reslist[index].resreatting
+                                            .toString(),
+                                        style: const TextStyle(
+                                          color: Colors.black38,
+                                          fontSize: 14,
+                                        ),
+                                      ),
+                                      (resListController
+                                                  .reslist[index].resoffer <
+                                              30)
+                                          ? const SizedBox()
+                                          : Row(
+                                              children: [
+                                                const Padding(
+                                                  padding: EdgeInsets.only(
+                                                      left: 10.0, right: 10),
+                                                  child: Icon(
+                                                    Icons.circle,
+                                                    size: 3,
+                                                    color: Colors.black38,
+                                                  ),
+                                                ),
+                                                const Icon(
+                                                  Icons.circle,
+                                                  size: 15,
+                                                  color: Colors.black38,
+                                                ),
+                                                const SizedBox(width: 2),
+                                                Text(
+                                                  'upto ${resListController.reslist[index].resoffer.toString()}% off',
+                                                  style: const TextStyle(
+                                                    color: Colors.black38,
+                                                    fontSize: 14,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
