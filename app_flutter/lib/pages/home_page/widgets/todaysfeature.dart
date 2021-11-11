@@ -14,7 +14,10 @@ class TodaysFeatured extends StatelessWidget {
         children: [
           const Padding(
             padding: EdgeInsets.only(left: 20, bottom: 20),
-            child: Text("Today's Featured"),
+            child: Text(
+              "Today's Featured",
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
           ),
           CarouselSlider(
             options:
