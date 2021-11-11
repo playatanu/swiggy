@@ -20,6 +20,7 @@ class RestudentModel {
     required this.resname,
     required this.resimage,
     required this.resreatting,
+    required this.resoffer,
     required this.address,
     required this.type,
     required this.foods,
@@ -29,6 +30,7 @@ class RestudentModel {
   String resname;
   String resimage;
   double resreatting;
+  int resoffer;
   String address;
   String type;
   List<Food> foods;
@@ -38,6 +40,7 @@ class RestudentModel {
         resname: json["resname"],
         resimage: json["resimage"],
         resreatting: json["resreatting"].toDouble(),
+        resoffer: json["resoffer"],
         address: json["address"],
         type: json["type"],
         foods: List<Food>.from(json["foods"].map((x) => Food.fromJson(x))),
@@ -48,6 +51,7 @@ class RestudentModel {
         "resname": resname,
         "resimage": resimage,
         "resreatting": resreatting,
+        "resoffer": resoffer,
         "address": address,
         "type": type,
         "foods": List<dynamic>.from(foods.map((x) => x.toJson())),
