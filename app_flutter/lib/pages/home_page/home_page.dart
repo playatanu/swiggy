@@ -6,7 +6,6 @@ import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
 import 'package:swiggy/controllers/location_controller.dart';
 import 'package:swiggy/pages/bottom_nav_bar/bottom_nav_bar.dart';
-import 'package:swiggy/pages/home_page/widgets/filterchoies.dart';
 import 'package:swiggy/pages/home_page/widgets/foodbanner.dart';
 import 'package:swiggy/pages/home_page/widgets/restaurantlist.dart';
 import 'package:swiggy/pages/home_page/widgets/todaysfeature.dart';
@@ -29,8 +28,29 @@ class HomePage extends StatelessWidget {
           ///TodaysFeatured [home_page/widgets/todaysfeatured.dart]
           const TodaysFeatured(),
 
-          ///FilterChoies [home_page/widgets/filterchoies.dart]
-          const FilterChoies(),
+          // ///FilterChoies [home_page/widgets/filterchoies.dart]
+          // const FilterChoies(),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: const [
+                    Icon(Icons.fastfood_outlined),
+                    SizedBox(width: 8),
+                    Text(
+                      'All Resturants',
+                      style:
+                          TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                const Text('Discover unic tastes'),
+              ],
+            ),
+          ),
 
           ///RestaurantList [home_page/widgets/restaurantlist.dart]
           RestaurantListView(),
