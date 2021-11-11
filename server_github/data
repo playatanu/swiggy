@@ -103,7 +103,7 @@
         "resname": "Zero Cafe Hut",
         "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vxknxzcpshh9m0lmhhmx",
         "resreatting": 5.4,
-        "resoffer": 60,
+        "resoffer": 50,
         "address": "radha bazar, Ramsitapara",
         "type": "Italian, Fast Food",
         "foods": [
@@ -186,7 +186,7 @@
         "resname": "Sayoni Restaurant And Hotel",
         "resimage": "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kjgufbbcwh3eodqjjpyk",
         "resreatting": 3.8,
-        "resoffer": 60,
+        "resoffer": ,
         "address": "radha bazar, Ramsitapara",
         "type": "North Indian, Bengali",
         "foods": [
