@@ -16,7 +16,7 @@ class RestaurantListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: 2,
-      child: Obx(() => ListView.builder(
+      child: Obx(() => ListView.separated(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: resListController.reslist.length,
@@ -50,25 +50,32 @@ class RestaurantListView extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Positioned(
-                            bottom: -10,
-                            child: Container(
-                                height: 30,
-                                width: 100,
-                                decoration: BoxDecoration(
-                                    boxShadow: const [
-                                      BoxShadow(
-                                        color: Colors.black,
-                                        blurRadius: 10.0,
-                                      ),
-                                    ],
-                                    border: Border.all(
-                                      color: Colors.grey.shade400,
-                                    ),
-                                    color: gray,
-                                    borderRadius: BorderRadius.circular(8)),
-                                child: const Center(child: Text('50% OFF'))),
-                          ),
+
+                          // ignore: unnecessary_null_comparison
+                          (resListController.reslist[index].resoffer < 30)
+                              ? const SizedBox()
+                              : Positioned(
+                                  bottom: -10,
+                                  child: Container(
+                                      height: 30,
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                          boxShadow: const [
+                                            BoxShadow(
+                                              color: Colors.black,
+                                              blurRadius: 10.0,
+                                            ),
+                                          ],
+                                          border: Border.all(
+                                            color: Colors.grey.shade400,
+                                          ),
+                                          color: gray,
+                                          borderRadius:
+                                              BorderRadius.circular(8)),
+                                      child: Center(
+                                          child: Text(
+                                              '${resListController.reslist[index].resoffer}% OFF '))),
+                                ),
                         ],
                       ),
                       Expanded(
@@ -90,6 +97,9 @@ class RestaurantListView extends StatelessWidget {
                   )),
                 ),
               );
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return const Divider();
             },
           )),
     );
