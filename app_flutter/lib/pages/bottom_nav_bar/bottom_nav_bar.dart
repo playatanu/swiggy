@@ -60,7 +60,7 @@ class _MyBottomNavBarState extends State<MyBottomNavBar> {
                 builder: (context) => HomePage(),
               ),
             );
-          }else if (index == 3) {
+          } else if (index == 3) {
             Navigator.push(
               context,
               MaterialPageRoute(

@@ -207,10 +207,11 @@ class _ProfilePageState extends State<ProfilePage> {
             height: getProportionateScreenHeight(50),
             child: Align(
               alignment: Alignment.center,
-                child: Text(
-              'App Version 1.0.0',
-              style: kAppVersionTextStyle,
-            ),),
+              child: Text(
+                'App Version 1.0.0',
+                style: kAppVersionTextStyle,
+              ),
+            ),
           )
         ],
       ),
