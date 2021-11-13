@@ -37,10 +37,66 @@ class RestaurantPage extends StatelessWidget {
                           "₹ ${resListController.reslist[resindex].foods[index].fprice.toString()}"),
                     ],
                   ),
-                  Image.network(
-                    resListController.reslist[resindex].foods[index].fimage,
-                    width: 100,
-                    height: 100,
+                  Stack(
+                    alignment: AlignmentDirectional.bottomCenter,
+                    clipBehavior: Clip.none,
+                    children: [
+                      Container(
+                        height: MediaQuery.of(context).size.height / 10,
+                        width: MediaQuery.of(context).size.width / 3,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: NetworkImage(
+                                resListController
+                                    .reslist[resindex].foods[index].fimage,
+                                scale: 1.0),
+                          ),
+                        ),
+                      ),
+
+                      // ignore: unnecessary_null_comparison
+                      Positioned(
+                        bottom: -10,
+                        child: Container(
+                            height: 30,
+                            decoration: BoxDecoration(
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: Colors.black12,
+                                    blurRadius: 5.0,
+                                  ),
+                                ],
+                                // border: Border.all(
+                                //   color: Colors.grey.shade400,
+                                // ),
+                                color: gray,
+                                borderRadius: BorderRadius.circular(8)),
+                            child: (1 == 1)
+                                ? (Container(
+                                    margin: const EdgeInsets.symmetric(
+                                        horizontal: 20.0),
+                                    child: const Text(
+                                      'ADD',
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                  ))
+                                : Row(
+                                    // mainAxisAlignment: MainAxisAlignment.center,
+                                    // crossAxisAlignment: CrossAxisAlignment.center,
+                                    children: [
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(Icons.remove)),
+                                      const Text('0'),
+                                      IconButton(
+                                          onPressed: () {},
+                                          icon: const Icon(Icons.add))
+                                    ],
+                                  )),
+                      ),
+                    ],
                   ),
                 ]),
           );
