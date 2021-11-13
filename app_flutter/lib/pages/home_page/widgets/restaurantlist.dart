@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
@@ -63,13 +64,13 @@ class RestaurantListView extends StatelessWidget {
                                       decoration: BoxDecoration(
                                           boxShadow: const [
                                             BoxShadow(
-                                              color: Colors.black,
-                                              blurRadius: 10.0,
+                                              color: Colors.black12,
+                                              blurRadius: 5.0,
                                             ),
                                           ],
-                                          border: Border.all(
-                                            color: Colors.grey.shade400,
-                                          ),
+                                          // border: Border.all(
+                                          //   color: Colors.grey.shade400,
+                                          // ),
                                           color: gray,
                                           borderRadius:
                                               BorderRadius.circular(8)),
@@ -141,10 +142,10 @@ class RestaurantListView extends StatelessWidget {
                                                     color: Colors.black38,
                                                   ),
                                                 ),
-                                                const Icon(
-                                                  Icons.circle,
-                                                  size: 15,
+                                                const FaIcon(
+                                                  FontAwesomeIcons.percent,
                                                   color: Colors.black38,
+                                                  size: 10,
                                                 ),
                                                 const SizedBox(width: 2),
                                                 Text(
