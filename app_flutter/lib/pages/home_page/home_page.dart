@@ -1,7 +1,9 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/state_manager.dart';
 import 'package:swiggy/constants.dart';
 import 'package:swiggy/controllers/location_controller.dart';
@@ -69,12 +71,11 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   IconButton(
-                    color: black,
-                    icon: const Icon(Icons.location_on_outlined),
-                    onPressed: () {
-                      appbarController.fatchlocationdata();
-                    },
-                  ),
+                      color: black,
+                      icon: const Icon(Icons.location_on_outlined),
+                      onPressed: () {
+                        appbarController.fatchlocationdata();
+                      }),
                   Text(
                     appbarController.area.value,
                     style: const TextStyle(
@@ -92,22 +93,25 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             )),
-        actions: const [
-          IconButton(
-            icon: Icon(
-              Icons.star_outline_sharp,
-              color: black,
-            ),
-            onPressed: null,
-          ),
-          Center(
-            child: Text(
-              'Offres',
-              style: TextStyle(color: black),
-            ),
-          ),
-          SizedBox(
-            width: 12,
+        actions: [
+          Row(
+            children: const [
+              IconButton(
+                icon: FaIcon(
+                  FontAwesomeIcons.percent,
+                  size: 10,
+                  color: black,
+                ),
+                onPressed: null,
+              ),
+              Text(
+                'Offres',
+                style: TextStyle(color: black),
+              ),
+              SizedBox(
+                width: 20,
+              )
+            ],
           ),
         ],
       ),
